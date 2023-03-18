@@ -10,16 +10,17 @@ int app0202()
 	
 	int a = 100;
 	int b = 50;
+	int c = 10;
 	int result;
 
-	result = a + b;
-	printf("result of computing: %d + %d = %d\n",a, b, result);
+	result = a + b + c;
+	printf("result of computing: %d + %d +%d  = %d\n",a, b, c, result);
 
-	result = a - b;
-	printf("result of computing: %d - %d = %d\n", a, b, result);
+	result = a - b + c;
+	printf("result of computing: %d - %d + %d = %d\n", a, b, c, result);
 
-	result = a * b;
-	printf("result of computing: %d * %d = %d\n", a, b, result);
+	result = a * b / c;
+	printf("result of computing: %d * %d  / %d= %d\n", a, b, c, result);
 
 	result = a / b;
 	printf("result of computing: %d / %d = %d\n", a, b, result);
@@ -30,6 +31,8 @@ int app0202()
 	printf("\n");
 
 	return 0;
+
+	// void main 대신 int랑 return0 를 쓰는걸 좋아하신다 교수님이
 }
 
 void main()
@@ -37,3 +40,4 @@ void main()
 	app0202();
 }
 //키보드에 0 1 2 3 4 ... 은 숫자일까 문자일까
+//0.01을 백번 누적합 결과 얼마?
