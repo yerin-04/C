@@ -1,27 +1,35 @@
 //202378076 À¯¿¹¸°
-//2023.03.20
+//2023.03.22
 //ch02 ex.
 
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int app0202()
 {
-	int a = 200;
-	int b = 50;
-	int result=0;
+	int a, b;
+	int result;
 
+	scanf("%d", &a);
+	scanf("%d", &b);
+
+	result = a + b;
 	printf("%d + %d = %d\n", a, b, result);
+
+	result = a - b;
+	printf("%d - %d = %d\n", a, b, result);
+
+	result = a * b;
+	printf("%d * %d = %d\n", a, b, result);
+
+	result = a / b;
+	printf("%d / %d = %d\n", a, b, result);
+
+	return 0;
 }
 
 int main()
 {
-	//app0202();
-	float a = 0.01;
-	float result = 0.0;
-	for (int i = 0; i < 100; i++)
-		result = result + a;
+	app0202();
 
-	printf("%f", result);
-	return 0;
 }
