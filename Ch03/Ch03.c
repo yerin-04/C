@@ -1,10 +1,10 @@
 //202378076 유예린
 //2023.03.27
-//표준출력함수 printf()
+//표준출력함수 printf() 서식 확인
 
 #include <stdio.h>
 
-int app0202()
+int gibon3_5()
 {
 	
 	printf("%d\n", 123);
@@ -28,5 +28,5 @@ int app0202()
 
 void main()
 {
-	app0202();
+	gibon3_5();
 }
