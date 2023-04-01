@@ -6,6 +6,7 @@
 int app3()
 {
 	float st_h[10];
+	//4바이트 실수 데이터 저장 공간 이름 st_h, 10개의 데이터 저장 => 배열 선언
 
 	st_h[0] = 160;
 	st_h[1] = 161;
@@ -43,6 +44,7 @@ void main()
 }
 */
 
+/*
 int test_init()
 {
 	int hap=0;
@@ -64,4 +66,33 @@ int test_init()
 void main()
 {
 	test_init();
+}
+*/
+
+int app3_15()
+{
+	char str[10] = "012345678";
+	printf("before: %s\n", str);
+
+	str[0] = 'Y'; str[1] = 'E';
+	str[2] = 'R'; str[3] = 'I';
+	str[4] = 'N'; str[5] = '\0';
+
+	printf("after: %s\n", str);
+	printf("str[4]: %c\n", str[4]);
+	printf("str[5]: %c\n", str[5]);
+	printf("str[15]: %c\n", str[15]);
+
+
+
+
+
+
+	return 0;
+}
+
+int main()
+{
+	app3_15();
+	return 0;
 }
